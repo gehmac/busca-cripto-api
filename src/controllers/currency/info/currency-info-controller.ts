@@ -5,5 +5,6 @@ export class CurrencyInfoController {
   @Get()
   async getCurrencyPrices() {
     console.log('oiii');
+    return 'oi';
   }
 }
