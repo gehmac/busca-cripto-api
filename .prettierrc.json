@@ -4,8 +4,5 @@
   "trailingComma": "all",
   "endOfLine": "lf",
   "bracketSpacing": true,
-  "arrowParens": "always",
-  "semi": true,
-  
-
+  "arrowParens": "always"
 }

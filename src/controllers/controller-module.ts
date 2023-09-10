@@ -1,10 +1,7 @@
-import { Module } from "@nestjs/common";
-import { CurrencyInfoController } from "./currency/info/currency-info-controller";
-// import { ConfigModule } from "src/_shared/config-module";
+import { Module } from '@nestjs/common';
+import { CurrencyInfoController } from './currency/info/currency-info-controller';
 
 @Module({
-  // imports: [ConfigModule],
-  controllers: [CurrencyInfoController]
+  controllers: [CurrencyInfoController],
 })
-
-export class ControllersModule { }
+export class ControllersModule {}

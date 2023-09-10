@@ -3,17 +3,15 @@ import { ControllersModule } from './controllers/controller-module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigModule } from '@nestjs/config';
 
-
 console.log(process.env.APP_MONGO_CONECTION);
 
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: '.env'
+      envFilePath: '.env',
     }),
     MongooseModule.forRoot(process.env.APP_MONGO_CONECTION),
-    ControllersModule
+    ControllersModule,
   ],
 })
-
-export class AppModule { }
+export class AppModule {}
