@@ -1,3 +1,4 @@
+// import 'dotenv/config'
 import getApp from "./main";
 
 getApp()
