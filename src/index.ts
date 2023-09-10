@@ -1,5 +1,5 @@
 // import 'dotenv/config'
-import getApp from "./main";
+import getApp from './main';
 
 getApp()
   .then(async (app) => {
