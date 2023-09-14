@@ -12,9 +12,7 @@ function configureApp(appModule: INestApplication): void {
 
 async function createAppModule(): Promise<NestExpressApplication> {
   const appModule = await NestFactory.create<NestExpressApplication>(AppModule);
-
   configureApp(appModule);
-
   return appModule;
 }
 

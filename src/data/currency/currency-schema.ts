@@ -11,9 +11,8 @@ export const CurrencySchema = new mongoose.Schema<CurrencyType>({
   price: Number,
 });
 
-
 export const CurrencyModel = new ModelProvider(
-   'currencies',
-   'currencyTypes', 
-   CurrencySchema
+  'currencies',
+  'currencyTypes',
+  CurrencySchema,
 );
