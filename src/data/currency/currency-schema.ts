@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import { ModelProvider } from '../../_shared/config/model-provider';
 
 export type CurrencyType = {
   name: string;
@@ -10,7 +11,9 @@ export const CurrencySchema = new mongoose.Schema<CurrencyType>({
   price: Number,
 });
 
-export const CurrencyModel = mongoose.model<CurrencyType & mongoose.Document>(
-  'currency',
-  CurrencySchema,
+
+export const CurrencyModel = new ModelProvider(
+   'currencies',
+   'currencyTypes', 
+   CurrencySchema
 );

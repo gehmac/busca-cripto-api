@@ -6,7 +6,7 @@ import { CurrencyDao } from '../../../data/currency/currency-dao';
 export class GetInfoCurrenciesUsecase
   implements IQueryHandler<GetInfoCurrenciesQuery, GetInfoCurrenciesQueryTypes>
 {
-  async execute(): Promise<GetInfoCurrenciesQueryTypes> {
+  async execute(): Promise<GetInfoCurrenciesQueryTypes | any> {
     const result = await CurrencyDao.getCurrencies();
     return result;
   }
